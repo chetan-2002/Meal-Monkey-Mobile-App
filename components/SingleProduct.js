@@ -40,7 +40,7 @@ const SingleProduct = ({ product }) => {
           title: `${product?.name} added to cart successfully`,
           // description: "We've added the product to your cart",
           status: "success",
-          duration: 3000,
+          duration: 2000,
           isClosable: true,
         });
         setCart(res.data);
@@ -51,7 +51,7 @@ const SingleProduct = ({ product }) => {
           title: "Error",
           description: "Something went wrong",
           status: "error",
-          duration: 3000,
+          duration: 2000,
           isClosable: true,
         });
         setLoading(false);

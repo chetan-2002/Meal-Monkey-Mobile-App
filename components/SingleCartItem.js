@@ -49,7 +49,7 @@ const SingleCartItem = ({ item }) => {
           title: "Error",
           description: "Something went wrong",
           status: "error",
-          duration: 3000,
+          duration: 2000,
           isClosable: true,
           backgroundColor: "red.600",
         });

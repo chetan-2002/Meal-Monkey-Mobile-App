@@ -76,7 +76,7 @@ const Login = ({ navigation }) => {
     if (email.length < 1 || password.length < 1) {
       toast.show({
         title: "Please fill all the fields",
-        duration: 3000,
+        duration: 2000,
         isClosable: true,
         backgroundColor: "red.600",
       });
@@ -87,7 +87,7 @@ const Login = ({ navigation }) => {
       toast.show({
         title: "Password must be at least 6 characters",
         status: "error",
-        duration: 3000,
+        duration: 2000,
         isClosable: true,
         backgroundColor: "red.600",
       });
@@ -116,7 +116,7 @@ const Login = ({ navigation }) => {
         toast.show({
           title: "Login Successful",
           status: "success",
-          duration: 3000,
+          duration: 1000,
           isClosable: true,
           backgroundColor: "green.700",
         });
@@ -131,7 +131,7 @@ const Login = ({ navigation }) => {
         toast.show({
           title: "Invalid Credentials",
           status: "error",
-          duration: 3000,
+          duration: 2000,
           isClosable: true,
           backgroundColor: "red.600",
         });

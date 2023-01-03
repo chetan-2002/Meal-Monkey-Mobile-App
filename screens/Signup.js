@@ -99,7 +99,7 @@ const Signup = ({ navigation }) => {
               backgroundColor: "green.400",
               title: "Verification Email Sent",
               status: "success",
-              duration: 3000,
+              duration: 2000,
               isClosable: true,
             });
           })
@@ -108,7 +108,7 @@ const Signup = ({ navigation }) => {
               backgroundColor: "red.600",
               title: "Error in sending verification email",
               status: "error",
-              duration: 3000,
+              duration: 2000,
               isClosable: true,
             });
           });
@@ -129,7 +129,7 @@ const Signup = ({ navigation }) => {
     if (email.length < 1 || password.length < 1 || confirmPassword.length < 1) {
       toast.show({
         title: "Please fill all the fields",
-        duration: 3000,
+        duration: 2000,
         isClosable: true,
         backgroundColor: "red.600",
       });
@@ -139,7 +139,7 @@ const Signup = ({ navigation }) => {
     if (password !== confirmPassword) {
       toast.show({
         title: "Passwords do not match",
-        duration: 3000,
+        duration: 2000,
         isClosable: true,
         backgroundColor: "red.600",
       });
@@ -150,7 +150,7 @@ const Signup = ({ navigation }) => {
       toast.show({
         title: "Password must be at least 6 characters",
         status: "error",
-        duration: 3000,
+        duration: 2000,
         isClosable: true,
         backgroundColor: "red.600",
       });
@@ -162,7 +162,7 @@ const Signup = ({ navigation }) => {
       toast.show({
         title: "Please enter a valid email address",
         status: "error",
-        duration: 3000,
+        duration: 2000,
         isClosable: true,
         backgroundColor: "red.600",
       });
@@ -189,7 +189,7 @@ const Signup = ({ navigation }) => {
             backgroundColor: "green.400",
             title: "Account created successfully",
             status: "success",
-            duration: 3000,
+            duration: 2000,
             isClosable: true,
             variant: "left-accent",
           });
@@ -210,7 +210,7 @@ const Signup = ({ navigation }) => {
         toast.show({
           title: "Something went wrong",
           status: "error",
-          duration: 3000,
+          duration: 2000,
           isClosable: true,
           backgroundColor: "red.600",
         });

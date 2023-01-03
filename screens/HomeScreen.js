@@ -1,19 +1,6 @@
-import {
-  Box,
-  Button,
-  Center,
-  HStack,
-  Icon,
-  Pressable,
-  ScrollView,
-  Spinner,
-  Text,
-} from "native-base";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { Box, ScrollView, Spinner, Text } from "native-base";
+
 import React, { useEffect, useState } from "react";
-import { CartState } from "../Context/CartProvider";
-import { MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 import axios from "axios";
 import SingleSection from "../components/SingleSection";
 
@@ -29,7 +16,6 @@ const HomeScreen = ({ navigation }) => {
     await axios
       .get("https://meal-monkey-backend.onrender.com/api/category/", config)
       .then((res) => {
-        // console.log(res.data);
         setCategories(res.data);
         setLoading(false);
       })

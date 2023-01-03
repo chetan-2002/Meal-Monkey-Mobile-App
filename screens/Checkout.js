@@ -53,7 +53,7 @@ const Checkout = ({ navigation }) => {
         toast.show({
           title: "Order Placed Successfully",
           backgroundColor: "green.600",
-          duration: 3000,
+          duration: 2000,
           isClosable: true,
         });
         axios.post(
@@ -123,7 +123,7 @@ const Checkout = ({ navigation }) => {
         toast.show({
           title: "Something went wrong",
           backgroundColor: "red.600",
-          duration: 3000,
+          duration: 2000,
           isClosable: true,
         });
         setLoading(false);
@@ -155,7 +155,7 @@ const Checkout = ({ navigation }) => {
           toast.show({
             title: "Please Enter all the fields",
             backgroundColor: "red.600",
-            duration: 3000,
+            duration: 2000,
             isClosable: true,
           });
           setLoading(false);
@@ -167,7 +167,7 @@ const Checkout = ({ navigation }) => {
         toast({
           title: "Please Verify Your Email",
           status: "error",
-          duration: 3000,
+          duration: 2000,
           isClosable: true,
         });
         setLoading(false);
